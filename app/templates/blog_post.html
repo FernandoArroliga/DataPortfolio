@@ -1,0 +1,126 @@
+{% extends "bootstrap_layout.html" %}
+
+<!-- Title of the Page -->
+{% block title %}Project Template{% endblock title %}
+
+{% block body %}
+
+<!-- ############### Main Content ################### -->
+
+<!-- Header Section -->
+<div class="container-fluid py-5" style="background: #191d2b; color: #fff;">
+    <h1 class="text-center">Blog Post One</h1>
+    <p class="text-center">Write some example text here.</p>
+</div>
+
+<!-- Content Section -->
+<div class="container py-4">
+
+    <h2>Title Here</h2>
+    <p>Published: Dec 07, 2023</p>
+
+    <div class="container-fluid py-3">
+        <img src="{{ url_for('static', filename='img/post.jpg') }}" alt="project image one" class="img-fluid">
+    </div>
+
+    <h2 class="pt-5">Another Title here</h2>
+    <div class="container py-3">
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Error necessitatibus recusandae laudantium aliquid quasi natus cum
+            deleniti, placeat, eos, ullam quibusdam. Praesentium architecto molestias
+            porro odit iste, tenetur nesciunt asperiores?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Error necessitatibus recusandae laudantium aliquid quasi natus cum
+            deleniti, placeat, eos, ullam quibusdam. Praesentium architecto molestias
+            porro odit iste, tenetur nesciunt asperiores?
+            <br>
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Error necessitatibus recusandae laudantium aliquid quasi natus cum
+            deleniti, placeat, eos, ullam quibusdam. Praesentium architecto molestias
+            porro odit iste, tenetur nesciunt asperiores?
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Error necessitatibus recusandae laudantium aliquid quasi natus cum
+            deleniti, placeat, eos, ullam quibusdam. Praesentium architecto molestias
+            porro odit iste, tenetur nesciunt asperiores?
+        </p>
+
+    </div>
+
+    <h3 class="py-4">A Subtitle Here</h3>
+    <div class="container">
+
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Dolore ipsum neque non asperiores perferendis, aperiam numquam sapiente
+            est atque porro earum autem libero unde placeat voluptatem aliquam
+            laboriosam repudiandae maiores?
+            <br>
+            <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Dolore ipsum neque non asperiores perferendis, aperiam numquam sapiente
+            est atque porro earum autem libero unde placeat voluptatem aliquam
+            laboriosam repudiandae maiores?
+            <br>
+            <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Dolore ipsum neque non asperiores perferendis, aperiam numquam sapiente
+            est atque porro earum autem libero unde placeat voluptatem aliquam
+            laboriosam repudiandae maiores?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Dolore ipsum neque non asperiores perferendis, aperiam numquam sapiente
+            est atque porro earum autem libero unde placeat voluptatem aliquam
+            laboriosam repudiandae maiores?
+            <br>
+            <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Dolore ipsum neque non asperiores perferendis, aperiam numquam sapiente
+            est atque porro earum autem libero unde placeat voluptatem aliquam
+            laboriosam repudiandae maiores?
+        </p>
+
+    </div>
+
+    <!-- Some Images of the post -->
+    <div class="container-fluid py-4">
+
+        <h3>Some Images Here</h3>
+
+        <div class="lightbox pt-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- image one -->
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp"
+                        data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp" alt="Table Full of Spices"
+                        class="w-100 mb-2 mb-md-4 shadow-1-strong rounded" />
+                    <!-- image two -->
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Square/1.webp"
+                        data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Square/1.webp" alt="Coconut with Strawberries"
+                        class="w-100 shadow-1-strong rounded" />
+                </div>
+                <div class="col-lg-6">
+                    <!-- image three -->
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Vertical/1.webp"
+                        data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp" alt="Dark Roast Iced Coffee"
+                        class="w-100 shadow-1-strong rounded" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- Footer -->
+<div class="container-fluid py-2" style="background: #191d2b; color:#fff;">
+    <p>
+        All rights Reserved, 2023
+    </p>
+</div>
+
+{% endblock body %}

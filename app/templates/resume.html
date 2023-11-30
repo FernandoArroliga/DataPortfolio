@@ -1,0 +1,193 @@
+{% extends "bootstrap_layout.html" %}
+
+<!-- Title of the Page -->
+{% block title %}Resume{% endblock title %}
+
+{% block body %}
+
+<!-- Css Styles -->
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/resume.css') }}">
+
+<!-- Bootstrap5 Links -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+<!-- Main Content -->
+<div class="container">
+
+    <!-- Left Column -->
+    <div class="left_Side">
+
+        <div class="profileText">
+            <!-- Profile Image -->
+            <div class="imgBx">
+                <img src="{{ url_for('static', filename='img/profile.jfif') }}" alt="">
+            </div>
+            <!-- User Name -->
+            <h2>User Name<br><span>Data Analyst</span></h2>
+        </div>
+        <!-- Contact Information -->
+        <div class="contactInfo">
+            <h3 class="title">Contact Info</h3>
+            <ul>
+                <!-- phone -->
+                <li>
+                    <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <span class="text">0900 786 01</span>
+                </li>
+                <!-- email -->
+                <li>
+                    <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    <span class="text">user@gmail.com</span>
+                </li>
+                <!-- website -->
+                <li>
+                    <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                    <span class="text">mywebsite.com</span>
+                </li>
+                <!-- linkedin -->
+                <li>
+                    <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                    <span class="text">www.linkedin.com</span>
+                </li>
+                <!-- address -->
+                <li>
+                    <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <span class="text">Street, City, Country</span>
+                </li>
+            </ul>
+        </div>
+        <!-- Education Information -->
+        <div class="contactInfo education">
+            <h3 class="title">EDUCATION</h3>
+            <ul>
+                <li>
+                    <h5>2017 - 2020</h5>
+                    <h4>Bachelor in Business</h4>
+                    <h4>School Name </h4>
+                </li>
+                <li>
+                    <h5>2020 - 2021</h5>
+                    <h4>Master in Business</h4>
+                    <h4>College Name</h4>
+                </li>
+                <li>
+                    <h5>2021 - Now</h5>
+                    <h4>Undergraduate in Computer Science</h4>
+                    <h4>University Name</h4>
+                </li>
+            </ul>
+        </div>
+        <!-- Language Information -->
+        <div class="contactInfo language">
+            <h3 class="title">LANGUAGES</h3>
+            <ul>
+                <li>
+                    <span class="text">English</span>
+                    <span class="percent"></span>
+                    <div style="width: 90%;"></div>
+                </li>
+                <li>
+                    <span class="text">Spanish</span>
+                    <span class="percent"></span>
+                    <div style="width: 100%;"></div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Right Column -->
+    <div class="right_Side">
+        <!-- Summary Profile Information -->
+        <div class="about">
+            <h2 class="title2">Summary</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro exercitationem nesciunt,<br> tenetur
+                architecto omnis maxime delectus quae quo reprehenderit quas laudantium.Itaque sequi commodi vero
+                suscipit reiciendis ea aspernatur cum.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Porro exercitationem nesciunt,tenetur architecto omnis maxime delectus quae quo reprehenderit quas
+                laudantium. <br>Itaque sequi commodi vero suscipit reiciendis ea aspernatur cum.</p>
+        </div>
+        <!-- Work Experience -->
+        <div class="about">
+            <h2 class="title2">Experience</h2>
+            <div class="box">
+                <div class="year_company">
+                    <h5>2019 - 2021</h5>
+                    <h5>Company Name</h5>
+                </div>
+                <div class="text">
+                    <h4>Senior Business Intelligence</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro exercitationem nesciunt,
+                        tenetur architecto omnis </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="year_company">
+                    <h5>2021 - present</h5>
+                    <h5>Company Name</h5>
+                </div>
+                <div class="text">
+                    <h4>Data Analyist</h4>
+                    <p>Lorem ipsum,dolor sit amet consectetur adipisicing elit. Porro exercitationem
+                        nesciunt,tenetur architecto omnis </p>
+                </div>
+            </div>
+        </div>
+        <!-- Skills -->
+        <div class="about skills">
+            <h2 class="title2">Professional Skills</h2>
+            <div class="box">
+                <h4>Power Bi</h4>
+                <div class="percent">
+                    <div style="width:100%;"></div>
+                </div>
+            </div>
+            <div class="box">
+                <h4>Python</h4>
+                <div class="percent">
+                    <div style="width: 100%;"></div>
+                </div>
+            </div>
+            <div class="box">
+                <h4>Tableau</h4>
+                <div class="percent">
+                    <div style="width: 100%;"></div>
+                </div>
+            </div>
+            <div class="box">
+                <h4>SQL</h4>
+                <div class="percent">
+                    <div style="width:100%;"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Personal Interests -->
+        <div class="About interest">
+            <h2 class="title2">Interest</h2>
+            <ul>
+                <li><i class="fa fa-bar-chart" aria-hidden="true"></i> Trading</li>
+                <li><i class="fa fa-laptop" aria-hidden="true"></i> Developing</li>
+                <li><i class="fa fa-gamepad" aria-hidden="true"></i> Gaming</li>
+                <li><i class="fa fa-briefcase" aria-hidden="true"></i> Business</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!-- Bootstrap5 Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" 
+        crossorigin="anonymous"></script>
+
+{% endblock body %}
