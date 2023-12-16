@@ -11,11 +11,7 @@ joblib
 MarkupSafe
 mpmath
 networkx
-nltk
-numpy
 regex
-sympy
-torch
 tqdm
 typing-extensions
 werkzeug
